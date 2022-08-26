@@ -1,0 +1,23 @@
+{
+    "name": "Tourism in Sri Lanka",
+    "short_name": "Tour LK",
+    "start_url": "index.html",
+    "description": "WDOS Assignment",
+    "lang": "en",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#187a93",
+    "background_color": "#187a93",
+    "display": "standalone"
+}

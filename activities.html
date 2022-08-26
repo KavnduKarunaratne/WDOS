@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities in Sri Lanka</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/Favicon/manifest.json">
+    <link rel="mask-icon" href="images/Favicon/safari-pinned-tab.svg" color="#187a93">
+    <link rel="shortcut icon" href="images/Favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="images/Favicon/browserconfig.xml">
+    <meta name="theme-color" content="#187a93">
+
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/beach.css">
+
+</head>
+<body>
+    <header>  
+        <nav class="navCon">
+            <h1>TourLK</h1>
+            <ul class="navMenu">
+                <li class="navItem">
+                    <a href="index.html" class="navLink">Home</a>
+                </li>
+                <li class="navItem">
+                    <a href="wildlife.html" class="navLink">Wildlife</a>
+                </li>
+                <li class="navItem">
+                    <a href="beach.html" class="navLink">Beaches</a>
+                </li>
+                <li class="navItem">
+                    <a href="activities.html" class="navLink">Activities</a>
+                </li>
+                <li class="navItem">
+                    <a href="heri1.html" class="navLink">Sigiriya</a>
+                </li>
+                <li class="navItem">
+                    <a href="heri2.html" class="navLink">Cave Temple</a>
+                </li>
+                <li class="navItem">
+                    <a href="donation.html" class="navLink">Donation</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav>
+    </header>
+
+    <p class="description">Sri lanka has a variety of activities for foreign and local vistors to enjoy. You can get to experience water base, air base , earth base and many other activities. Since Sri lanka is surrounded by the ocean, beaches are mostly popular with foreigners. As sri lanka also has a huge cultural heritage there is more activities to be enjoyed.
+        Click here to see information about <a href="heri1.html">Sigiriya</a> or <a href="heri2.html">Cave Temple</a>
+    </p>
+    <div id="grid">
+        <section class="container">
+            <h2>Safari</h2><br>
+            <img src="images/Activities/safari.webp" alt="Image of a safari visit."><br>
+            <p>Safari watching is where you get observe the daily life of exotic animals from a safe distance. There is a variety of animals such as Leopards, Elephants, Birds and much more. Safari watching can go from 2 hours to multiple day depending on the type you choose. The cost are around from $50 to $150.
+                <a href="https://www.srilankansafari.com/" target="_blank">Click here for more information on safaris.</a>
+            </p>
+        </section>
+        <section class="container">
+            <h2>Hiking</h2><br>
+            <img src="images/Activities/hiking.webp" alt="Image of a hiking terrain."><br>
+            <p>Hiking is more of a physical activity as you have to trek for long distances but the reward of doing so is a marvelous and rare site of hidden gems in mother nature. Hiking takes around 6 to 10 hours and it costs around $40 to $100.
+                <a href="https://traveltriangle.com/blog/trekking-in-sri-lanka/" target="_blank">Click here for more information on hiking.</a>
+            </p>
+        </section>
+        <section class="container">
+            <h2>Diving</h2><br>
+            <img src="images/Activities/diving.webp" alt="Image of a person diving."><br>
+            <p>Diving is where you get to discover the wonder of the sea. By diving you are able to see the beautiful site of coral reefs, fish and many more. Diving can go from 15 minutes to 3 hours and the cost can go from $50 to $300.
+                <a href="https://www.padi.com/diving-in/sri-lanka/" target="_blank">Click here for more information on diving.</a>
+            </p>
+        </section>
+    </div>
+
+    <form id="form">
+
+        <fieldset>
+
+            <legend></legend>
+    
+            <label for="foreigner">Foreigner</label>
+            <input type="radio" id="foreigner" name="Type" value="foreigner">
+    
+            <label for="local">Local</label>
+            <input type="radio" id="local" name="Type" value="local">
+    
+        </fieldset>
+    
+        <fieldset>
+    
+    
+            <label for="adult">Adult Pass</label>
+            <input type="radio" id="adult" name="TType" value="adult">
+    
+            <label for="child">Child Pass</label>
+            <input type="radio" id="child" name="TType" value="child">
+
+            <label for="infant">Infant Pass</label>
+            <input type="radio" id="infant" name="TType" value="infant">
+    
+        </fieldset>
+
+        <fieldset>
+
+            <label for="amt">Number of People</label>
+            <input type="number" id="amt" name="Amount" min="1" value="1">
+        </fieldset>
+    
+        <fieldset>
+    
+            <legend>Annual Pass</legend>
+    
+            <label for="pyes">Yes</label>
+            <input type="radio" id="pyes" name="APass" value="yes">
+    
+            <label for="pno">No</label>
+            <input type="radio" id="pno" name="APass" value="no">
+    
+        </fieldset>
+    
+        <fieldset>
+    
+    
+            <label for="durations">Durations</label>
+            <select id="durations" name="timetaken" onchange="ticketDuration()">
+                <option hidden></option>
+                <option value="3Hrs">3 Hours</option>
+                <option value="1/2Day">1/2 Day</option>
+                <option value="FDay">Full Day</option>
+                <option value="2Day">2 Days</option>
+            </select>
+    
+        </fieldset>
+    
+        <fieldset>
+    
+            <legend>Food Token</legend>
+    
+            <label for="fyes">Yes</label>
+            <input type="radio" id="fyes" name="FTokens" value="yes">
+    
+            <label for="fno">No</label>
+            <input type="radio" id="fno" name="FTokens" value="no">
+    
+        </fieldset>
+        
+        <p id="currentOrder"></p>
+    
+        <input type="button" id="addOrder" value="Add Order"><br>
+        <input type="button" id="addFav" value="Favourite last added order">
+        
+        <p id="overallOrder"></p>
+        
+        <input type="button" id="placeOrder" value="Place Order"><br>
+        <input type="button" id="orderFav" value="Order Favourites"><br>
+        <input type="button" id="loyalty" value="Loyalty Points">
+
+    </form>
+
+    <footer>
+        <nav>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>
+            </ul>
+        </nav>
+
+        <!-- diving.webp - https://d27k8xmh3cuzik.cloudfront.net/wp-content/uploads/2018/09/OG3.jpg 
+        hiking.webp - https://www.amayaresorts.com/blog/wp-content/uploads/sites/3/2019/10/Hiking-and-Trekking-in-Sri-Lanka.jpg 
+        safari.webp - https://www.talallahouse.com/wp-content/uploads/2019/10/shutterstock_726294346.jpg  -->
+    </footer>
+
+
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

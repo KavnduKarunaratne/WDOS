@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.mainImg {
+    width: 100%;
+    height: auto;
+}
+
+.mainTxt {
+    padding: 10px;
+    text-align: center;
+    font-size: 28px;
+    color: #000;
+    
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto,auto);
+    justify-content: space-around;
+}
+
+#grid .container {
+    width: auto;
+    width: auto;
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    background-color: rgba(194, 249, 255, 0.2);
+    margin: 20px 10px;
+}
+
+#grid h2 {
+    font-family: "Sriracha";
+    font-size: 30px;
+    color: #F79334;
+}
+
+#grid h2, #grid p {
+    width: 90%;
+    padding: 0;
+    margin: 1em auto;
+}
+
+#grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    #grid {
+        grid-template-columns: 100vw;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+
+    .mainTxt {
+        font-size: 20px;
+    }
+}
